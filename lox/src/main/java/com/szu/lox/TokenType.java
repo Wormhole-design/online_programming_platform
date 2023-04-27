@@ -1,0 +1,21 @@
+package com.szu.lox;
+
+// 标记类型
+enum TokenType {
+    // 单字符标记.
+    LEFT_PAREN, RIGHT_PAREN, LEFT_BRACE, RIGHT_BRACE,
+    COMMA, DOT, MINUS, PLUS, SEMICOLON, SLASH, STAR,
+
+    // 1~2字符标记.
+    BANG, BANG_EQUAL, EQUAL, EQUAL_EQUAL,
+    GREATER, GREATER_EQUAL, LESS, LESS_EQUAL,
+
+    // 字面量.
+    IDENTIFIER, STRING, NUMBER,
+
+    // 保留字.
+    AND, CLASS, ELSE, FALSE, FUN, FOR, IF, NIL, OR,
+    PRINT, RETURN, SUPER, THIS, TRUE, VAR, WHILE,
+
+    EOF
+}
